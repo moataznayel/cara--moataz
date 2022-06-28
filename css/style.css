@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+li,
+p {
+    user-select: none;
+}
+
+/* start navbar */
+ul li {
+    padding: 0 1rem;
+}
+
+ul li .active {
+    color: #00897b !important;
+
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover:not(.shopping)::before,
+.active::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    bottom: 7px;
+    background-color: #00897b;
+}
+
+.shopping::before {
+    content: "0";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    right: -14px;
+    top: -1px;
+    font-size: 16px;
+    color: white;
+    background-color: #00897b;
+}
+
+ul li a {
+    color: black !important;
+}
+
+ul li a:hover {
+    color: #00897b !important;
+}
+
+/* end navbar */
+/* start header */
+header {
+    height: calc(100vh - 66px);
+    background-image: url(../images/hero4.png);
+    background-size: cover;
+}
+
+@media (max-width:991px) {
+    header {
+        height: calc(100vh - 66px);
+        background-image: none;
+        background-color: #e3e6f3;
+    }
+
+}
+
+header .button {
+    width: 170px;
+    background-image: url(../images/button.png);
+    background-size: cover;
+}
+
+.green {
+    color: #00897b;
+}
+
+
+/* end header */
+/* start services */
+.services h6 {
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.services .text1 {
+    background-color: #ffebee;
+}
+
+.services .text2 {
+    background-color: #c8e6c9;
+}
+
+.services .text3 {
+    background-color: #b8d9ed;
+}
+
+.services .text4 {
+    background-color: #e3ddf4;
+}
+
+.services .text5 {
+    background-color: #f8bbd0;
+}
+
+.services .text6 {
+    background-color: #f6e5db;
+}
+
+.services .col {
+    position: relative;
+}
+
+.services .col:hover {
+    transform: scale(1.1);
+}
+
+/* end services */
+/* start featured */
+.main-title h1 {
+    font-size: 3rem;
+}
+
+.card {
+    padding: .75rem;
+    border-radius: 1.5rem;
+    transition: .3s;
+}
+
+.card img:hover {
+    transform: rotateY(180deg);
+    transition: 3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width:768px) {
+    .card:hover {
+        transform: none;
+    }
+}
+
+.card img {
+    border-radius: 1rem;
+}
+
+.card p {
+
+    margin-bottom: .25rem;
+}
+
+.price span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #c8e6c9;
+}
+
+.price div i {
+    color: #FFD700;
+}
+
+/* end featured */
+/* start repair services */
+.repair-services {
+    margin: 5rem 0 3rem;
+    height: 350px;
+    background-image: url(../images/b2.jpg);
+    background-size: cover;
+}
+
+.repair-services span {
+    color: red;
+}
+
+
+/* start repair services */
+/* start offers */
+.offers .crazy {
+    height: 344px;
+    background-image: url(../images/b17.jpg);
+    background-size: cover;
+}
+
+.offers .summer {
+    height: 344px;
+    background-image: url(../images/b10.jpg);
+    background-size: cover;
+}
+
+.offers .btn {
+    border: 1px solid white;
+    color: white;
+}
+
+/* end offers */
+/* start new offer */
+.offer .frist {
+    height: 210px;
+    background-image: url(../images/b7.jpg);
+    background-size: cover;
+}
+
+.offer .second {
+    height: 210px;
+    background-image: url(../images/b4.jpg);
+    background-size: cover;
+}
+
+.offer .third {
+    height: 210px;
+    background-image: url(../images/b18.jpg);
+    background-size: cover;
+}
+
+/* end new offer */
+/* start sign up */
+.sign-up {
+    height: 200px;
+    background-color: #1a237e;
+    background-image: url(../images/b14.png);
+}
+
+.sign-up span {
+    color: #FFD700;
+}
+
+.sign-up .btn {
+    background-color: #00897b;
+}
+
+/* end sign up */
+/* start footer */
+.footer .rounded-3 {
+    border: 2px solid #00897b;
+}
+
+/* end footer */
